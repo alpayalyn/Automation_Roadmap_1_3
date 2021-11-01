@@ -73,7 +73,10 @@ elif(Genel_puan < 60 and Genel_puan >= 55):
 
 elif(Genel_puan <55):
     print("Aldığınız Harf notu FF'dır ve Genel puanınız:", Genel_puan)
-
+#tek fonksiyon ile not hesaplayalım.
+#Notları isterken while kullanalım.
+#variable isimleri düzeltelim.
+#refactor
 
 
 
