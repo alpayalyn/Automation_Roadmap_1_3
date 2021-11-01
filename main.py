@@ -1,3 +1,4 @@
+# girilen degerin 0-100 arasinda olup olmadigi kontrol eder.
 def validation(point):
     while True:
         if point < 0 or point > 100:
@@ -6,10 +7,7 @@ def validation(point):
             break            
     return point
 
-vize1 = validation(int(input("Lütfen vize1 notunuzu giriniz:")))
-vize2 = validation(int(input("Lütfen vize2 notunuzu giriniz:")))
-final = validation(int(input("Lütfen final notunuzu giriniz:")))
-
+# girilen notlarin, yuzdeleri alinarak toplam notu hesaplar.
 def notlama(vize1, vize2, final):
     vize1yuzde = 30
     vize2yuzde = 30
@@ -20,8 +18,14 @@ def notlama(vize1, vize2, final):
 
     return vize1etki + vize2etki + finaletki
 
+# degiskenler
+vize1 = validation(int(input("Lütfen vize1 notunuzu giriniz:")))
+vize2 = validation(int(input("Lütfen vize2 notunuzu giriniz:")))
+final = validation(int(input("Lütfen final notunuzu giriniz:")))
+
 totalPoint = notlama(vize1, vize2, final)
 
+# harf notu belirleme.
 if(totalPoint >= 90):
     print("Aldığınız Harf notu AA'dır ve Genel puanınız:", totalPoint)
 
